@@ -24,4 +24,9 @@
 #8165A4 lila
 #999999 grey
 #0A0A0A darkgrey
+#E0E5EC bluewhite
+
+# smooth link hover
+https://codepen.io/spe3d/pen/oLzoop
+
   
