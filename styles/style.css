@@ -124,13 +124,15 @@ h1 {
     transition: all 0.8s ease-in-out;
     font-size: 1.5rem;
     font-weight: 600;
-    background-color:#97aac3;
-    color: #FFD35C;
+    border:2px solid #97aac3;
+    color: black; 
 }
 
+
 .fun-fact:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
     cursor: pointer;
+    color: #FFD35C;
 }
 
 /* SCROLL DOWN BUTTON */
