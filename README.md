@@ -23,10 +23,16 @@
 #FFFFFF
 #8165A4 lila
 #999999 grey
-#0A0A0A darkgrey
+
 #E0E5EC bluewhite
+#98AAC4 greyblue
 
 # smooth link hover
 https://codepen.io/spe3d/pen/oLzoop
 
-  
+# Stuff to try
+
+linear text fading
+background: -webkit-linear-gradient(#98AAC4, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
