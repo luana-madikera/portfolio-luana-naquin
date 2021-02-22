@@ -1,84 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/style.css"
-    ><link rel="stylesheet" href="./styles/media.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
     <script src="https://kit.fontawesome.com/601a91b6f2.js" crossorigin="anonymous"></script>
     <title>Portfolio Luana</title>
 </head>
+
 <body>
-<!-- CONTAINER OF WHOLE PAGE -->
-<div class="container d-grid">
+    <!-- CONTAINER OF WHOLE PAGE -->
+    <div class="container d-grid">
 
-    <header class="d-flex">
-        <!-- LOGO  -->
-        <div class="logo">
-            <img src="./images/madikera-tech-logo-3.png" alt="logo madikera tech">
+        <header class="d-flex">
+            <!-- LOGO  -->
+            <div class="logo">
+                <img src="./images/madikera-tech-logo-3.png" alt="logo madikera tech">
+            </div>
+            <!-- NAVBAR -->
+            <nav class="d-flex">
+                <ul class="d-flex">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./profile.html">Profile</a></li>
+                    <!-- <li><a href="./creative-portfolio.html">Creative Portfolio</a></li> -->
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- BLOCK LEFT TEXT AND PRESA -->
+        <main class="d-flex">
+            <div class="presentation">
+                <h1 class=" line type">Hi, I am <span  style="color:#FFD35C;">Luana</span></h1>
+                <p>A Full Stack Developer Student at <a href="https://digitalcareerinstitute.org/" target="_blank">
+                        DCI</a>
+                </p>
+
+                <div class="fun-fact d-flex">Fun facts about me</div>
+            </div>
+
+            <!-- PHOTO -->
+            <div class="photo-presentation">
+                <img src="./images/photo_portfolio-web.png" alt="a portrait of luana">
+            </div>
+
+        </main>
+        <!-- END OF MAIN  -->
+
+        <!-- SCROLL DOWN  -->
+        <div class="scroll-down d-flex">
+            <p><a href="#projects"><i class="fas fa-angle-double-down"></i> Scroll down <i
+                        class="fas fa-angle-double-down"></i></a></p>
         </div>
-        <!-- NAVBAR -->
-        <nav class="d-flex">
+
+        <!-- SECTION WITH PRESENTATION OF 3 PROJECTS -->
+      
+        
+        <section class="images-projects d-grid" id="projects">
+            <!-- <aside class="d-flex">
+                <h2>Front End & Webdesign projects</h2>
+            </aside> -->
+        <div class="h2">
+            <h2>Front End & Webdesign projects<h2>
+        </div>
+            <div class="project-1">
+                <img src="./images/project_1.png" alt="Madikera Fit">
+            </div>
+            <div class="project-2">
+                <img src="./images/project_2.jpg" alt="La By'le">
+            </div>
+            <div class="project-3">
+                <img src="./images/project_3.png" alt="Questions for couples">
+            </div>
+        </section>
+
+        <footer>
             <ul class="d-flex">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./profile.html">Profile</a></li>
-                <!-- <li><a href="./creative-portfolio.html">Creative Portfolio</a></li> -->
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="https://github.com/luana-madikera" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="www.linkedin.com/in/luana-naquin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li><a href="mailto:naquinluana@gmail.com" target="_blank"><i class="fas fa-at"></i></a></li>
             </ul>
-        </nav>
-</header>
+        </footer>
 
-
-<!-- BLOCK LEFT TEXT AND PRESA -->
-<main class="d-flex">
-    <div class="presentation">
-        <h1>Hi, I am <span style="color: #FFD35C;">Luana</span></h1>
-        <p>A Full Stack Developer Student at <a href="https://digitalcareerinstitute.org/" target="_blank"> DCI</a>
-        </p>
-        <div class="fun-fact d-flex">Fun fact about me</div>
     </div>
-    
-    <!-- PHOTO -->
-    <div class="photo-presentation">
-        <img src="./images/photo_portfolio-web.png" alt="a portrait of luana">
-    </div>
-   
-</main>
- <!-- END OF MAIN  -->
-
-<!-- SCROLL DOWN  -->
-<div class="scroll-down d-flex">
-    <p><a href="#projects"><i class="fas fa-angle-double-down"></i> Scroll down <i class="fas fa-angle-double-down"></i></a></p>
-</div>
-
-<!-- SECTION WITH PRESENTATION OF 3 PROJECTS -->
-<section class="images-projects d-grid" id="projects">
-    <aside class="d-flex">
-        <h2>Front End & Webdesign projects</h2>
-    </aside>
-    <div class="project-1">
-        <img src="./images/project_1.png" alt="Madikera Fit">
-    </div>
-    <div class="project-2"> 
-        <img src="./images/project_2.jpg" alt="La By'le">
-    </div>
-    <div class="project-3"> 
-        <img src="./images/project_3.png" alt="Questions for couples">
-    </div>
-</section>
-
-<footer>
-    <ul class="d-flex">
-        <li><a href="https://github.com/luana-madikera" target="_blank"><i class="fab fa-github"></i></a></li>
-        <li><a href="www.linkedin.com/in/luana-naquin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a href="mailto:naquinluana@gmail.com" target="_blank"><i class="fas fa-at"></i></a></li>
-    </ul>
-</footer>
-
-</div>
 </body>
+
 </html>

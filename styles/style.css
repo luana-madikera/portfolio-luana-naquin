@@ -19,7 +19,7 @@ body {
 .container {
     width: 99vw;
     height: 100%;
-    grid-template-columns: 0.3fr 0.8fr 0.8fr 0.3fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 100px 0.2fr 0.05fr 0.2fr 100px;
     grid-template-areas: 
     "header header header header"
@@ -90,20 +90,56 @@ main {
     justify-content: center;
 }
 
-.presentation a {
-    color: black;
-    font-style: italic;
-    font-weight: 400;
-}
-
 h1 {
     font-size: 5rem;
 }
 
+/* ANIMATION TYPEWRITING */
+
+.line {
+    width: 100%;
+    border-right: 3px solid rgba(151, 170, 195, 0.45);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.type {
+    animation: typewriter 4s steps(20) 1s 1 normal forwards, cursor 0.4s 16 normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 11.5ch;
+        border-right-color: transparent;
+    }
+
+}
+
+@keyframes cursor {
+    from {
+        border-right-color: rgba(151, 170, 195, 0.45);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/* END OF ANIMATION */
+
 .presentation p {
     font-size: 3rem;
     padding-right: 2%;
-    color: #98AAC4;
+    color: #98aac4;
+}
+
+.presentation a {
+    color: black;
+    font-style: italic;
+    font-weight: 400;
 }
 
 
@@ -115,6 +151,7 @@ h1 {
     width: 115%;
     height: 50%;
 }
+
 
 .fun-fact {
     width: 200px;
@@ -148,16 +185,21 @@ h1 {
 
 /* SECTION */
 section {
-    width: 60vw;
+    width: 100%;
+    /* width: 100vw; */
     height: 65vh;
     grid-area: section;
-    gta
-    /* justify-content: center;
-    align-items: center; */
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 0.5fr 5fr;
+    grid-template-areas:
+    "h2 h2 h2 h2" 
+    ". image image image";
     gap: 2rem;
+    margin: 10% 0;
 }
 
-aside {
+/* aside {
+    grid-area: aside;
     height: 60%;
     text-transform: uppercase;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
@@ -168,8 +210,15 @@ aside {
     justify-content: center;
     align-items: center;
     color: white;
+    margin-left: 1%;
+} */
 
+.h2 {
+    grid-area: h2;
+    text-align: center;
+    
 }
+
 
 aside h2 {
     background-color: #FFD35C;
@@ -179,6 +228,7 @@ aside h2 {
 }
 
 section img {
+    grid-area: image;
     width: 100%;
     height: 100%;
     border-radius: 20px;
@@ -190,13 +240,15 @@ section img:hover {
     opacity: 1;
 }
 
-section div {
-    width: 30%;
+section .project-1,
+section .project-2,
+section .project-3 {
+    /* width: 30%; */
     height: 70%;
     box-shadow: 
     12px 12px 16px 0 rgba(0, 0, 0, 0.25),
     -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
-    border-radius: 20px; 
+    border-radius: 20px;
 }
 
 section div:hover {
@@ -238,4 +290,3 @@ a:hover {
 a {
     color: #98AAC4;
 }
-
