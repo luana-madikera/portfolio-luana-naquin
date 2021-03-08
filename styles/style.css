@@ -575,8 +575,9 @@ th {
 }
 
 .soft-skills > li::before {
-    content:"\f105";
+    content:"\f3a5";
     font-family: fontAwesome;
+    color: #FFD35C;
 }
 
 .hard-skills {
