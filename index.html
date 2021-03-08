@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/style.css">
@@ -15,37 +16,59 @@
 
 <body>
     <!-- CONTAINER OF WHOLE PAGE -->
-    <div class="container d-grid">
-
-        <header class="d-flex">
-            <!-- LOGO  -->
-            <div class="logo">
-                <img src="./images/madikera-tech-logo-3.png" alt="logo madikera tech">
-            </div>
-            <!-- NAVBAR -->
-            <nav class="d-flex">
-                <ul class="d-flex">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./profile.html">Profile</a></li>
-                    <!-- <li><a href="./creative-portfolio.html">Creative Portfolio</a></li> -->
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </nav>
+    <div class="container-1">
+        <header>
+          <a id="top"></a>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand nav-link active" href="./index.html"> <img src="./images/madikera-tech-logo-3.png" alt="logo madikera tech" class="img-fluid" style="width: 150px;height: 150px;"> </a>
+    
+                <button class="button-style navbar-toggler clear-menu-btn p-0 m-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class=" navbar-toggler-icon"></span> -->
+    
+                   <div class="clear-menu-btn">
+                    <input type="checkbox">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                    <span class="circle"></span>
+                </button>
+    
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link-style" href="#projects">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link-style" href="#skills">Profile</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link-style" href="mailto:naquinluana@gmail.com" target="_blank" tabindex="-1" aria-disabled="true">Hire me</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
 
-
+ 
         <!-- BLOCK LEFT TEXT AND PRESA -->
         <main class="d-flex">
+      
             <div class="presentation">
-                <h1 class=" line type">Hi, I am <span  style="color:#FFD35C;">Luana</span></h1>
-                <p>A Full Stack Developer Student at <a href="https://digitalcareerinstitute.org/" target="_blank">
+              <div class="presentation-text">
+                <h1 class=" line type">Hi, I am <span style="color:#FFD35C;">Luana</span></h1>
+                <h2>A Full Stack Developer Student at <a href="https://digitalcareerinstitute.org/" target="_blank" style="font-style: italic;">
                         DCI</a>
-                </p>
-
-                <div class="fun-fact d-flex">Fun facts about me</div>
+                </h2>            
+                <p>My specialty is front-end web design and development. I love turning creative ideas to beautiful and efficient websites with semantic HTML & CSS. I am newbie web developer keen to learn more !</p>
+                <a href="#skills"><div class="fun-fact d-flex">Check out my skills !</div></a>
+              </div>
+                <div class="wrapper"><a href="#projects">
+                    <i class="fa fa-long-arrow-right arrow2 fa-4x" aria-hidden="true"></i><span class="vertical-text">
+                   Scroll Down</span></a></div>
+                
             </div>
-
             <!-- PHOTO -->
             <div class="photo-presentation">
                 <img src="./images/photo_portfolio-web.png" alt="a portrait of luana">
@@ -54,43 +77,180 @@
         </main>
         <!-- END OF MAIN  -->
 
-        <!-- SCROLL DOWN  -->
-        <div class="scroll-down d-flex">
-            <p><a href="#projects"><i class="fas fa-angle-double-down"></i> Scroll down <i
-                        class="fas fa-angle-double-down"></i></a></p>
-        </div>
-
+  
+<section> 
+<a id="projects"></a>
+    <h2 class="text-center pb-5">Projects I'm currently <span style="color:#FFD35C;">working on...</span><h2> 
         <!-- SECTION WITH PRESENTATION OF 3 PROJECTS -->
-      
-        
-        <section class="images-projects d-grid" id="projects">
-            <!-- <aside class="d-flex">
-                <h2>Front End & Webdesign projects</h2>
-            </aside> -->
-        <div class="h2">
-            <h2>Front End & Webdesign projects<h2>
-        </div>
-            <div class="project-1">
-                <img src="./images/project_1.png" alt="Madikera Fit">
-            </div>
-            <div class="project-2">
-                <img src="./images/project_2.jpg" alt="La By'le">
-            </div>
-            <div class="project-3">
-                <img src="./images/project_3.png" alt="Questions for couples">
-            </div>
-        </section>
+<div class="container d-flex gap-4 justify-content-center pt-5">
+ 
+    <div class="projects-img-container">
 
-        <footer>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                   <div class="flip-card-front">
+                    <img src="./images/project_1.png" alt="Avatar">
+                </div>
+            
+            <div class="flip-card-back d-flex nowrap align-items-center justify-content-center px-5"><a href="https://luana-madikera.github.io/madikera-fit-links/" target="_blank">
+
+                <h3>Concept, Webdesign, Front End Development</h3>
+                <p>Website of links, mobile-friendly, for a dance fitness online class</p>
+                <p>Freelance, own business</p> 
+                <p>View website</p>
+              </a>
+            </div>
+        </div>
+    </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                   <div class="flip-card-front">
+                    <img src="./images/project_2.jpg" alt="Avatar">
+                </div>
+            
+            <div class="flip-card-back d-flex nowrap align-items-center justify-content-center px-5"><a href="https://luana-madikera.github.io/madikera-fit-links/" target="_blank">
+
+                <h3>Concept, Webdesign, Front End Development</h3>
+                <p>Interface website with HTML, CSS, JS, integrate music player, for La By'le</p>
+                <p>Freelance</p> 
+                <p>View website</p>
+              </a>
+            </div>
+        </div>
+    </div>
+
+
+ 
+    <div class="flip-card">
+        <div class="flip-card-inner">
+           <div class="flip-card-front">
+            <img src="./images/project_3.png" alt="Avatar">
+        </div>
+
+    <div class="flip-card-back d-flex nowrap align-items-center justify-content-center px-5"><a href="https://luana-madikera.github.io/madikera-fit-links/" target="_blank">
+
+        <h3>Concept, Webdesign, Front End Development</h3>
+        <p>Single page website with JS Animation, for a quizz website</p>
+        <p>Freelance</p> 
+        <p>View website</p>
+      </a>
+    </div>
+
+</div>
+</div>
+</section>
+
+<!-- SECTION 2 - SKILLS -->
+<section class="section2 m-5">
+ <a id="skills"><h2 class="mb-5">My ski<span style="color: #FFD35C;">lls</span> </h2></a> 
+
+<div class="skills d-flex justify-content-center">
+  <table class="table-borderless fs-3">
+    <thead>
+      <tr>
+        <th scope="col" style="color: #3737eb;">Programming Languages</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">HTML</th>
+        <td>
+          <div class='bg'>
+          <div class='load html'>
+            <span class='right'>50%</span>
+          </div>
+        </div></td>
+
+
+      </tr>
+      <tr>
+        <th scope="row">CSS</th>
+        <td>
+          <div class='bg'>
+          <div class='load css'>
+            <span class='right'>60%</span>
+          </div>
+        </div></td>
+      </tr>
+
+
+      <tr>
+        <th scope="row">JavaScript</th>
+        <td colspan="2"><div class='bg'>
+          <div class='load js'>
+            <span class='right'>1%</span>
+          </div>
+        </div></td>
+      </tr>
+
+      <tr>
+        <th scope="row">Sass</th>
+        <td colspan="2"><div class='bg'>
+          <div class='load sass'>
+            <span class='right'>15%</span>
+          </div>
+        </div></td>
+      </tr>
+
+      <tr>
+        <th scope="row">Bootstrap</th>
+        <td colspan="2"><div class='bg'>
+          <div class='load bootstrap'>
+            <span class='right'>25%</span>
+          </div>
+        </div></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- T2 -->
+
+    <ul class="soft-skills"> 
+      <h3 class="mb-5">Soft-Skills</h3>
+
+      <li>Creativity</li>
+      <li>Communication</li>
+      <li>Problem Solving</li>
+      <li>Visual Thinking</li>
+      <li>Enthusiasm</li>
+      <li>Work Ethic</li>
+    </ul>
+
+
+    <div class="hard-skills text-left">
+        <h3>Hard Skills & Languages</h3>
+       
+    <p class="fs-3">I speak <span>English</span>, <span>German</span> and <span>French</span> fluently.</p>
+    <p class="fs-3">I have knowledge in Photoshop, Illustrator and Video Editing.
+      You can check out my full resume and qualification on <a href="https://www.linkedin.com/in/luana-naquin/" target="_blank" style="font-weight: 500;">Linkedin</a>.
+    </p> 
+    </div>
+ 
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
             <ul class="d-flex">
                 <li><a href="https://github.com/luana-madikera" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="www.linkedin.com/in/luana-naquin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <li><a href="https://www.linkedin.com/in/luana-naquin/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </li>
                 <li><a href="mailto:naquinluana@gmail.com" target="_blank"><i class="fas fa-at"></i></a></li>
+                <li><a href="https://codepen.io/luana-madikera/projects/" target="_blank"><i class="fab fa-codepen"></i></a></li>
             </ul>
-        </footer>
 
-    </div>
+</footer>
+
+<div class="wrapper-2"><a href="#top">
+  <i class="fa fa-long-arrow-left arrow2 fa-4x" aria-hidden="true"></i><span class="vertical-text">
+ Scroll Up</span></a></div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 
 </html>

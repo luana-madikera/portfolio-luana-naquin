@@ -36,3 +36,7 @@ linear text fading
 background: -webkit-linear-gradient(#98AAC4, black);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+# Tablets and phone
+
+needs the row class for the container of the projects cards !
