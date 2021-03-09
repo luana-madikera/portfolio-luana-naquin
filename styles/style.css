@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* SMOOTH SCROLLING */
-/* * {
-    scroll-behavior: smooth;
-} */
 
 :root {
     font-size: 62.5%;
@@ -71,10 +67,6 @@ nav ul li a {
     position: relative;
 }
 
-/* DESKTOP ANIMATION */
-
-
-/* MOBILE TABLET */
 
 .nav-link-style {
     color: #98AAC4;
@@ -92,12 +84,14 @@ nav ul li a {
     color: transparent;
 }
 
+/* MOBILE TABLET */
+
 /*  custom button */
 
 .clear-menu-btn {
     position: relative;
     width: 40px;
-    height: 40px;
+    height: 50px;
     margin: 0 auto;
   }
 
@@ -105,7 +99,7 @@ nav ul li a {
     position: absolute;
     filter: alpha(opacity=0);
     opacity: 0;
-    width: 100%;
+    width: 120%;
     height: 100%;
   }
 
@@ -160,26 +154,26 @@ nav ul li a {
   .clear-menu-btn .bottom { top: 85%; }
 
   .clear-menu-btn .circle {
-    /* display: block;
-    position: absolute; */
-    /* top: 100%;
-    left: 100%; */
-    /* -webkit-transform: translate(-50%, -50%);
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); */
-    /* filter: alpha(opacity=0);
-    opacity: 0; */
-    /* width: 0;
-    height: 0; */
+     filter: alpha(opacity=0);
+    opacity: 0; 
+     width: 0;
+    height: 0; 
     background-color: transparent;
-    /* -webkit-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s; */
-    /* z-index: -1; */
+     z-index: -1;
   }
 
 
@@ -266,13 +260,12 @@ main {
     align-items: center;
     transition: all 0.8s ease-in-out;
     font-weight: 600;
-    /* border:2px solid #97aac3; */
     color: black;
 }
 
 
 .fun-fact:hover {
-    transform: scale(2);
+    transform: scale(1.5);
     cursor: pointer;
     color: #3737eb;
 }
@@ -477,7 +470,7 @@ tbody {
 }
 
 th {
-    color: #98AAC4; 
+    color: #98AAC4;
 }
 
 
@@ -539,13 +532,7 @@ th {
     }
   }
 
-.html,
-.css,
-.js,
-.sass,
-.bootstrap {
-    margin-left: 10%;
-}
+
 .css {
     width: 60%;
 }
@@ -567,6 +554,7 @@ th {
 .soft-skills {
     list-style: none;
     font-size: 1.5rem;
+    line-height: 35px;
 }
 
 .section2 h3 {
@@ -625,6 +613,8 @@ th {
     width: 10vw;
     height: 20vh;
     }   
+
+
 }
 
 /* DESKTOP smaller */
@@ -677,6 +667,7 @@ th {
 
     main {
         position: relative;
+        left: 10%;
     }
 
     .presentation {
@@ -684,11 +675,11 @@ th {
         top: 30vh;
     }
 
-    section {
+    section:nth-of-type(1) {
         position: relative;
         top: 15vh;
+        left: 10%;
     }
-
     footer {
         position: relative;
         bottom: -230vh;
@@ -738,17 +729,16 @@ th {
     }
     .section2 {
         position: relative;
-        top: 1400px;
-        right: 50px;
-
+        top: 1250px;
     }
 
-    .soft-skills,
     table {
-        text-align: center;
+        text-align: start;
     }
     .skills {
         flex-direction: column;
     }
 }
+
+
 
