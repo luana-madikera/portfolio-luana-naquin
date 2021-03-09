@@ -32,7 +32,7 @@ p {
     width: 99vw;
     height: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 0.2fr 0.2fr 0.7fr 100px;
+    grid-template-rows: 100px 0.2fr 0.2fr 1fr 100px;
     grid-template-areas:
     "header header header header"
     "main main main main"
@@ -735,6 +735,7 @@ th {
     table {
         text-align: start;
     }
+
     .skills {
         flex-direction: column;
     }
